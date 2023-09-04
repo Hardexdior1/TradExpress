@@ -1,200 +1,110 @@
 
-/* */
 
 
-.header{
-    padding: 30px 25px ;
-    /* position: relative; */
-    transition: 0.3s ;
 
+
+/* NavBar2 Starts here */
+
+.navBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 50px;
+    font-weight: lighter;
+    font-family: sans-serif;
+    background-color: #7C20BE;
 }
-.fixed{
-    position: fixed;
-    right: 0;
-    left: 0;
-    top: 0;
-    box-shadow: 0px 7px 50px rgb(92, 89, 89);
-    padding: 30px 25px ;
-    /* position: relative; */
-    z-index: 1000;
-    background-color: white;
-    transition: 0.3s;
-}
-.nav{
-    display: flex ;
-    justify-content: space-between ;
-    align-items: center ;
+.showUl {
+    display: flex;
+
 }
 .ul{
     display: flex;
+    /* align-items: center;
+    justify-content: center; */
 }
-
-li{
-    padding: 0px 13px ;
+.ul li{
     list-style-type: none;
-    /* border-right: 2px solid #a3a3a3; */
+    margin: 10px;
 }
-a{
+.showUl li{
+    list-style-type: none;
+    margin: 10px;
+}
+.ul li .Link{
+    list-style-type: none;
+    margin: 10px;
     text-decoration: none;
-    color: #a3a3a3 ;
-    font-weight: bold;
+    color: #fff;
 }
-.ul a{
+.showUl li .Link {
     text-decoration: none;
-    color: #a3a3a3 ;
-    font-weight: bold;
-}
-/* .ul a.active{
-    color:red;
-} */
-
-/* .ul a:hover,.ul a.active{
-    color: red;
-} */
-.cartIcon{
-    cursor: pointer;
-    
-  
-}
-.cartIcon img{
-    object-fit: cover;
-    border-radius: 120px;
-    height: 50px;
-
-width: 50px;}
-.cartIconCarrier{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-.cartIconCarrier button{
-    background-color: black;
-    color: #ffffff;
-    border: none;
-    font-size: 14px;
-    height: 40px;
-    width: 150px;
-    border-radius: 20px;
-    cursor: pointer;
-    font-weight: lighter;
-    font-weight: bold;
-}
-.menu{
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    gap: 3px;
-    width: 33px;
-    align-items: center;
-    justify-content: center;
-    height: 30px;
-    border-radius: 5rem;
-   
-}
-.home{
-    /* color: black ; */
+    color: #fff;
 }
 
-.menu div{
+.getStartedLink{
+    padding: 13px 30px;
     background-color: white;
-    height: 2px;
-    width: 50%;
+    border-radius: 2px;
+    color: rgb(32, 132, 247);
+    text-decoration: none;
 }
-@media (min-width:971px) {
+
+.Login{
+    padding: 13px 38px;
+    border: 1px solid white;
+    border-radius: 2px;
+    background-color: #7C20BE;
+    text-decoration: none;
+    color: white;
+}
+@media (min-width:819px) {
     .menu{
-            display: none;
-    }
-    .remove{    
         display: none;
     }
-    
 }
-@media (max-width:970px) {
-    .ul{
-        display: none;
-        /* transition: 0.3s ease-in; */
-        
 
-    }
-    .ulShow{
-        position: absolute;
+@media (max-width:819px) {
+    .menu{
+        display: flex;
         flex-direction: column;
-        gap: 15px ;
-        padding-top: 15px ;
-        text-align: left;
-        top: -15px;
-        left: 0px ;
-        background-color: black;
-        height: 100vh;
-        width: 65%;
-        transition: 10s ;
-        z-index: 100;
-          animation: fadeAnimation 2s ease  alternate;
-
-
     }
-    @keyframes fadeAnimation {
-        0% {
-          opacity: 0;
-        }
-        100% {
-          opacity: 1;
-        }
-      }
-    .remove{
+    .menu div{
+        background-color:white;
+        height: 3px;
+        width: 15px;
+        margin-top: 2px;
+    }
+    .navBar{
+        position: relative;
+    }
+    .ul{
+        /* display: flex;
+        flex-direction: column;
         position: absolute;
-        right: -1px;
-        color: white ;
-        font-size: 45px ;
-        border: none;
-        font-weight: 100;
-        z-index: 400;
-        top: -1px ;
-        margin-right: 10px;
-    }
-    li{
-        padding: 12px 0px ;
-        border-bottom: 1px solid #a3a3a3;
-    }
-    .contactUs{
+        left: 0;
+        right: 0;
+        top: 80px;
+        background-color: #7C20BE;
+        padding-bottom: 10px;
+        gap: 10px; */
         display: none;
+    }
+    .showUl{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 80px;
+        background-color: #7C20BE;
+        padding-bottom: 10px;
+        gap: 10px;
     }
    
-    .cartIcon img{
-        height: 35px;
-        width: 35px;
-        object-fit: cover;
-
-    }
-    .logoImg{
-        /* height: 100px; */
-        width: 150px;
-        object-fit: cover;
-    }
-    .header{
-        box-shadow: 0px 7px 20px rgb(209, 204, 204);
-        padding: 20px 13px ;
-
-    }
-
-}
-
-.icons{
-    display: flex;
-    gap: 20px;
-    padding-top: 10px;
-    justify-content: center;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 200;
-    background-color: black;
-    align-items: baseline;
-}
-@media (min-width:500px) {
-    .icons{
-        display: none;
-    }
     
 }
+
+
+
+
