@@ -1,0 +1,154 @@
+/* .image-container {
+    position: relative;
+  }
+  
+  .image {
+    opacity: 0;
+    position: absolute;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .visible {
+    opacity: 1;
+  }
+  
+  .hidden {
+    opacity: 0;
+  } */
+.section1Carrier{
+  transition: 0.3s ;
+}
+.section {
+  font-family: sans-serif;
+  text-align: left;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 40px;
+  position: relative;
+  gap: 30px;
+  animation: fadeAnimation 6s ease infinite alternate;
+  border-bottom: 1px solid grey ;
+}
+
+.section h3 {
+  font-size: 25px;
+  color: #898989;
+  margin-bottom: 0;
+  font-weight: lighter;
+}
+
+.section h2 {
+  font-size: 55px;
+  /* color: #0c0c0c; */
+  font-weight: lighter;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.section h1 {
+  font-weight: bold;
+  font-size: 54px;
+  margin-top: 0;
+}
+.section1ImgCarrier {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.section img {
+  width: 85%;
+}
+
+@keyframes fadeAnimation {
+  0% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+.purchase {
+  font-size: 14px;
+  background-color: #0088ff;
+  color: white;
+  /* padding: 15px 35px; */
+  height: 50px ;
+  width: 200px;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+.watch {
+  font-size: 14px;
+  font-weight: bold;
+  height: 50px ;
+  width: 200px;
+  border-radius: 15px;
+  background-color: white;
+  border: 1px solid #0c0c0c;
+  color: #0c0c0c;
+  cursor: pointer;
+}
+.btnCarrier {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.first {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.change3{
+  color: red;
+}
+@media (max-width:859px) {
+  .section {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+    padding: 25px 40px;
+  }
+  .btnCarrier{
+    justify-content: center;
+  }
+}
+@media (max-width: 767px) {
+
+  .section h3 {
+    font-size: 15px;
+    /* color: #898989; */
+    margin-bottom: 0;
+    font-weight: lighter;
+  }
+
+  .section h2 {
+    font-size: 27px;
+    /* color: #0c0c0c; */
+    font-weight: lighter;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .section h1 {
+    /* color: #0c0c0c; */
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 0;
+  }
+  .section img {
+    width: 80%;
+  }
+ 
+}

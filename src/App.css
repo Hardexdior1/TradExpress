@@ -1,48 +1,67 @@
-.App{
-    background: #f1f3f9 ;
+/* .App{
+    text-align: center;
     font-family: sans-serif;
     margin: 0;
     padding: 0;
+} */
+
+.App {
+  text-align: center;
+  
+  margin: 0;
+  padding: 0;
+  background-color: white;
+    /* background: #E5E5E5; */
+
+  transition: 0.6s;
+
+} 
+.AppBlack{
+  background-color: black;
+  text-align: center;
+  color: white;
+  margin: 0;
+  padding: 0;
+  transition: 0.6s;
+
 }
-.icons{
-    margin-top: 20px;
+html{
+    scroll-behavior: smooth;
 }
 
-.dash{
-    display: flex;
-    justify-content: space-between;
-    padding: 25px 40px ;
-    align-items: center;
-    background-color: #ffff;
+
+
+.a2{
+  margin-top: 1000px;
+  text-align: left;
+  margin-left: -100px;
+  font-size: 50px;
+}
+.top{
+    font-size: 10px;
+    font-weight: bolder;
+    font-size: 20px;
+    padding:10px  15px;
+    background-color:  #0088ff;
+    color: white;
+    position: fixed;
+    border-radius: 15rem;
+ bottom: 120px;
+ right: 15px;
+}
+.mode{
+  height:25px;
+  width: 25px;
+  object-fit:cover;
+  border-radius:3rem;
+
+  font-size: 10px;
+   
+   cursor: pointer;
+    position: fixed;
     
+ top: 200px;
+ right: 15px;
+ z-index: 1000;
 }
-.dash h2{
-font-family: 'Courier New', Courier, ;
-/* font-size: 20px; */
-font-weight: bold;
-line-height: 30px;
-
-}
-.selectIcon{
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-@media (max-width:400px) {
-    .dash{
-        padding: 25px 14px;
-    }
-}
-.icon{
-    display: flex;
-
-
-}
-.dash select{
-    background-color: burlywood;
-    padding: 3px 4px ;
-    border: none;
-    font-weight: bold;
-}
-
 

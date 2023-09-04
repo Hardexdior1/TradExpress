@@ -1,0 +1,129 @@
+.contactWrap h1{
+    font-size: 2.5em;
+    font-weight: 800;
+}
+.contactWrap{
+    display: grid;
+    gap: 35px ;
+    padding: 20px 30px ;
+}
+
+.contactWrap span{
+    color: #0088ff;
+
+}
+.flexAddress{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px ;
+    /* justify-content: center; */
+}
+@media (max-width:636px) {
+    .flexAddress{
+        gap: 45px ;
+    }
+    .flexAddress div{
+        width: 100%;
+    }
+}
+.eachAddCarrier{
+padding: 3% 4%;
+box-shadow: 4px 4px 30px rgb(209, 208, 207);
+border-radius: 10px ;
+position: relative;
+background-color: transparent;
+transition: 0.3s ;
+cursor: pointer;
+background-color: white;
+color: black;
+/* width: 100% ; */
+
+}
+.eachAddCarrier p{
+    font-weight: 600;
+}
+.eachAddCarrier:hover{
+    border-radius: 20px ;
+    box-shadow: 4px 4px 30px rgb(122, 121, 120);
+
+}
+.eachAddCarrier img{
+    position: absolute;
+    top: -25px ;
+   left: 41% ;
+   height: 50px;
+   width: 50px;
+   object-fit: cover;
+   object-fit: cover;
+   
+}
+.formMargin{
+    margin-top: 10%  ;
+    margin-bottom: 10%  ;
+
+}
+.grid3{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    text-align: left;
+    gap: 20px ;
+
+}
+.imgAndText{
+    text-align: left;
+}
+@media (max-width:499px) {
+    .grid3{
+        grid-template-columns: 1fr ;
+        gap: 10px ;
+    }
+}
+.gridForm2 input{
+    width: 100%;
+    height: 40px;
+    border-radius: 20px ;
+    border: 2px solid gainsboro;
+}
+.gridForm2{
+    /* width: 50%; */
+    margin: 0 auto;
+    box-shadow: 4px 4px 20px rgb(209, 208, 207);
+    padding: 2% 4%;
+    border-radius: 10px ;
+    background-color: white;
+    color: black;
+    font-weight: 600;
+
+}
+.gridForm2 textarea{
+    border: 1px solid #0088ff;
+    margin-top: 40px ;
+}
+.gridForm2 button{
+    background-color: #0088ff;
+    border: none;
+    border-radius: 15px;
+    padding: 14px 22px ;
+    color: white;
+    font-weight: 700;
+    margin-top: 10px ;
+}
+@media (min-width:1001px) {
+    .gridForm2{
+        width: 50% ;
+    }
+}
+.socialFlex{
+    display: flex;
+    gap: 10px ;
+    justify-content: center;
+    align-items: center;
+}
+.socialFlex img {
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
+    padding: 5% 0px ;
+}

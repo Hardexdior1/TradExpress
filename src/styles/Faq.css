@@ -1,0 +1,96 @@
+.flexWrap {
+  text-align: left;
+}
+.faqWrap {
+  padding: 20px 30px;
+}
+.faqWrap h1 {
+  font-size: 42px;
+}
+
+.text span{
+    color: red;
+    color: #0088ff;
+
+}
+.faqWrap p{
+    /* color: #666666; */
+    font-size: 17px ;
+    line-height: 30px;
+    font-size: 790;
+    /* color: red; */
+}
+.subTextAndFormWrap h5{
+    margin-top: 0;
+}
+.subTextAndFormWrap .question{
+    margin-top: 0;
+}
+
+.subTextAndFormWrap select{
+    color: #666666;
+    font-size: 16px ;
+
+    font-size: 800;
+}
+.flexWrap{
+    /* background-color:rgb(233, 233, 233); */
+    background-color: #0088ff;
+    border-radius: 30px ;
+    border: 1px solid #e2d1d1;
+    color: white 
+
+}
+
+.subTextAndFormWrap p {
+margin-bottom: 0;
+}
+.subTextAndFormWrap input,select,textarea{
+    margin-top: 5px ;
+    width: 100%;
+    font-weight:600;
+    color: #666666;
+}
+.subTextAndFormWrap input,select{
+    height: 40px;
+    border-radius: 10px ;
+    border: 1px solid #666666;
+}
+.ask{
+    display: flex;
+    justify-content: end;
+}
+.ask button{
+    color: white;
+    font-weight: 900;
+    background-color: black;
+    border: none;
+    border-radius: 10px ;
+    cursor: pointer;
+    height: 40px;
+    width: 80px ;
+    margin-top: 5px ;
+    transition: 0.3s ;
+    box-shadow: 5px 5px 7px rgb(245, 243, 243);
+}
+.ask button:hover{
+    background-color: white;
+    color: #0088ff;
+}
+.padding{
+    padding:30px  6% ;
+}
+.gridForm{
+    display: grid;
+    grid-template-columns: 1.3fr 3fr ;
+    text-align: left;
+    gap: 0px ;
+    margin-top: 8%;
+    margin-bottom: 8%;
+
+}
+@media (max-width:1000px) {
+    .gridForm{
+      grid-template-columns: 1fr ;
+    }
+}
